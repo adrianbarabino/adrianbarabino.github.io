@@ -35,17 +35,18 @@
         getUserLanguage : function(){
             var userLang = this.options.forceLang || navigator.language || navigator.userLanguage;
             $.defaultLanguage = userLang;
-
             userLang = userLang.replace(/_/, '-').toLowerCase();
-
+			if(userLang == "es-419"){
+				userLang = "es";
+			}
             if (userLang.length > 3){
+
                 userLang = userLang.substring(0,3) + userLang.substring(3).toUpperCase();
                 this.languages = [
                     userLang.substring(0,2),
                     userLang.substring(3).toUpperCase()
 
                 ];
-                userLang = userLang.substring(0,2);
             }
             else {
                 this.languages = [
