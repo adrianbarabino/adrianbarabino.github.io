@@ -43,8 +43,9 @@
                 this.languages = [
                     userLang.substring(0,2),
                     userLang.substring(3).toUpperCase()
-                    alert(userLang);
+
                 ];
+                alert(userLang);
             }
             else {
                 this.languages = [
