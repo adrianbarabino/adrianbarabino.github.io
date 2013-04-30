@@ -1,6 +1,7 @@
 function start () {
 	$(".lang").on("click", changeLang);
 	$("#jobs li a").attr("href", "javascript:void(0);");
+	$("#jobs li a[rel]").overlay();
 	$("[data-translate]").jqTranslate('index');
 	$('#jobs').movingBoxes({
 	startPanel   : 1,      // start with this panel
