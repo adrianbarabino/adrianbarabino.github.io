@@ -54,11 +54,13 @@ ul#jobs li span{
 	padding: 0.5em;
 	text-align: center;
 }
-
+ul#jobs li a{
+	border:0;
+}
 ul#jobs li img{
 	background:#222;
 	padding:0.3em;
-	width:96%;
+	width:95%;
 }
 
 ul#social{
