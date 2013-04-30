@@ -151,7 +151,7 @@ ul#social li{
     /* styling */
     background-color:#333;
  
-    width:675px;
+    width:900px;
     min-height:200px;
     border:1px solid #666;
  
@@ -160,6 +160,15 @@ ul#social li{
     -webkit-box-shadow: 0 0 90px #000;
 }
  
+.simple_overlay img{
+	width:100%;
+}
+.simple_overlay figure{
+	width:70%;
+}
+.simple_overlay .details{
+	width:25%;
+}
 /* close button positioned on upper right corner */
 .simple_overlay .close {
     background-image:url(/images/overlay/close.png);
@@ -178,7 +187,6 @@ ul#social li{
   right:15px;
   font-size:11px;
   color:#fff;
-  width:150px;
   }
  
   .details h3 {
