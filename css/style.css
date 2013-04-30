@@ -38,7 +38,7 @@ ul#jobs li{
 	width:30%;
 }
 
-ul#jobs li a{
+ul#jobs li span{
 	background: #222;
 	color: white;
 	display: block;
