@@ -36,13 +36,14 @@ ul#jobs{
 ul#jobs li{
 	display:inline-block;
 	width:30%;
+	margin-bottom: 0.3em;
 }
 
 ul#jobs li span{
 	background: #222;
 	color: white;
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 800;
 	margin: 0;
 	margin-top: -5px;
@@ -53,7 +54,7 @@ ul#jobs li span{
 ul#jobs li img{
 	background:#222;
 	padding:0.3em;
-	width:96.5%;
+	width:96%;
 }
 
 ul#social{
