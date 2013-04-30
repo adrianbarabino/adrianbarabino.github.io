@@ -37,3 +37,12 @@ ul#jobs li{
 	display:inline-block;
 	width:20%;
 }
+
+ul#social{
+	list-style:none;
+}
+
+ul#social li{
+	display:inline-block;
+	width:10%;
+}
