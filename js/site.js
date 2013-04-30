@@ -1,8 +1,6 @@
 function start () {
 	$(".lang").on("click", changeLang);
 	$("#jobs li a").attr("href", "javascript:void(0);");
-	$("#jobs li a[rel]").overlay();
-	$("[data-translate]").jqTranslate('index');
 	$('#jobs').movingBoxes({
 	startPanel   : 1,      // start with this panel
 	reducedSize  : 0.8,    // non-current panel size: 80% of panel size
@@ -10,6 +8,8 @@ function start () {
 	buildNav     : true,   // if true, navigation links will be added
 	navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
 	});
+	$("[data-translate]").jqTranslate('index');
+	$("#jobs li a[rel]").overlay();
 
 }
 
