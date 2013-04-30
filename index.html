@@ -6,7 +6,17 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script src="js/jqueryTranslator.js"></script>
+	<script src="js/jquery.easing.1.2.js"></script>
+	<script src="js/jquery.movingboxes.js"></script>
 	<script src="js/site.js"></script>
+	<style>
+		/* Overall & panel width defined using css in MovingBoxes version 2.2.2+ */
+		#slider-one { width: 300px; }
+		#slider-one > li { width: 150px; }
+
+		#slider-two { width: 500px; }
+		#slider-two > div { width: 360px; }
+	</style>
 </head>
 <body>
 	<section id="container">
@@ -43,6 +53,8 @@
 			</ul>
 
 			<h2 data-translate="my-jobs" class="jobs">My jobs</h2>
+					<!-- Slider #1 -->
+
 			<ul id="jobs">
 				<li><a href="http://www.bienvenidosalmundo.net/"><img src="/works/thumb/bam.jpg" alt=""><span>Bienvenidos Al Mundo (2010)</span></a></li>
 				<li><a href="http://www.encuentrociudadano.org/"><img src="/works/thumb/ec2011.jpg" alt=""><span>Encuentro Ciudadano (2011)</span></a></li>
