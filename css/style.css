@@ -1,3 +1,30 @@
 body{
-	
+	background:#222;
+	margin:0;
+}
+
+#container{
+	background:#fff;
+	margin:0 auto;
+	max-width:860px;
+}
+
+#contenido{
+	padding: 0.5em 1em;
+}
+
+header{
+	padding: 0.5em 1em;
+}
+#langselect{
+	width:100%;
+}
+
+#langselect ul{
+	width:100%;
+	list-style:none;
+}
+#langselect ul li{
+	display:inline-block;
+	width:30%;
 }
