@@ -9,7 +9,7 @@ body{
 	max-width:860px;
 }
 
-#contenido{
+#content{
 	padding: 0.5em 1em;
 }
 
@@ -27,4 +27,13 @@ header{
 #langselect ul li{
 	display:inline-block;
 	width:30%;
+}
+
+ul#jobs{
+	list-style:none;
+}
+
+ul#jobs li{
+	display:inline-block;
+	width:20%;
 }
