@@ -1,9 +1,20 @@
 var request = "";
 var works_json = "";
-
+var work_is_open;
+work_is_open = false;
 function open_work (info) {
-	$("#workscontainer").slideDown();
+	if(work_is_open){
+		$(".work").hide();
+	}else{
+		$("#workscontainer").slideDown();
+	}
 	$($(this).attr("rel")).slideDown();
+	work_is_open = true;
+}
+function close_work (argument) {
+	$(".work").slideUp();
+	$("#workscontainer").slideUp();
+	work_is_open = false;
 }
 function start () {
 	$(".lang").on("click", changeLang);
@@ -13,13 +24,14 @@ function start () {
 		console.log(works_json);
 		$.each(works_json, function (i, val) {
 			$("#works").append('<li><a href="http://'+val.url+'" rel="#'+val.tag+'"><img src="/images/works/thumb/'+val.tag+'.jpg" alt=""><span>'+val.nombre+' ('+val.fecha+')</span></a></li>')
-			$("#workscontainer").append('<div class="work" style="display:none;" id="'+val.tag+'">\n<figure>\n	<img src="/images/works/medium/'+val.tag+'.jpg" />\n</figure>\n<div class="details">\n  <h3>'+val.nombre+'</h3>\n  <h4>'+val.url+'</h4>\n  <span>Año</span>'+val.fecha+'<br>\n  <span>Mi trabajo ahí:</span>\n  <ul>\n  </ul>\n</div>\n</div>');
+			$("#workscontainer").append('<div class="work" style="display:none;" id="'+val.tag+'"><div class="close"></div>\n<figure>\n	<img src="/images/works/medium/'+val.tag+'.jpg" />\n</figure>\n<div class="details">\n  <h3>'+val.nombre+'</h3>\n  <h4>'+val.url+'</h4>\n  <span>Año</span>'+val.fecha+'<br>\n  <span>Mi trabajo ahí:</span>\n  <ul>\n  </ul>\n</div>\n</div>');
 			$.each(val.trabajo, function (i, trabajo) {
 				$("div#"+val.tag+" div ul").append("<li>"+trabajo+"</li>");
 			})
 			
 		})
 		$("#works li a").on("click", open_work);
+		$(".work .close").on("click", close_work);
 		$('#works').movingBoxes({
 		startPanel   : 1,      // start with this panel
 		reducedSize  : 0.8,    // non-current panel size: 80% of panel size

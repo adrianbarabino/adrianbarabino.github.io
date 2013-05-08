@@ -151,6 +151,7 @@ ul#social li{
  
     width:800px;
     min-height:250px;
+    border:5px solid #333;
  
     /* CSS3 styling for latest browsers */
     border-top-left-radius: 10px;
@@ -162,16 +163,18 @@ ul#social li{
 }
 .work{
   position:absolute;
+  width:100%;
 }
 .work img{
 	width:100%;
+  border-top-left-radius:9px;
 }
 .work figure{
-	width:70%;
+	width:60%;
 	margin:0;
 }
 .work .details{
-	width:25%;
+	width:35%;
 }
 /* close button positioned on upper right corner */
 .work .close {
