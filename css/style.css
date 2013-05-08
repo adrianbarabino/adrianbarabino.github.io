@@ -181,6 +181,8 @@ ul#social li{
 .work figure{
 	width:60%;
 	margin:0;
+  position: relative;
+  top: -10px;
 }
 .work .details{
 	width:35%;
@@ -190,7 +192,7 @@ ul#social li{
     background-image:url(/images/overlay/close.png);
     position:absolute;
     right:-15px;
-    top:-15px;
+    top:-25px;
     cursor:pointer;
     height:35px;
     width:35px;
