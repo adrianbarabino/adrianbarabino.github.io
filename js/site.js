@@ -45,12 +45,13 @@ function after_ajax_call (info) {
 				
 		}else{
 			$("#workscontainer").css({"min-height": "270px"});
+			go_to_bottom();
 				$("#workscontainer").slideDown(200, function () {
-					$("#workscontainer_inner").fadeIn(200, function () {
+					$("#workscontainer_inner").slideDown(200, function () {
 						$($(actual_work).attr("rel")).slideDown(200);
 						
 						$($(actual_work).attr("rel")).addClass("active");
-						go_to_bottom();
+						
 					});
 				});
 			
@@ -61,7 +62,7 @@ function after_ajax_call (info) {
 	}
 function close_work (argument) {
 	$(".work").slideUp(200, function () {
-	$("#workscontainer_inner").fadeOut(200, function () {
+	$("#workscontainer_inner").slideUp(200, function () {
 		$("#workscontainer").slideUp(200);
 		$("#workscontainer").css({"min-height": "0"});
 		$("#workscontainer .active").removeClass("active");
