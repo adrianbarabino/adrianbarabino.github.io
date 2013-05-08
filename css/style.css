@@ -140,11 +140,12 @@ ul#social li{
 /* overlay */
 
 /* the overlayed element */
-.works {
+#workcontainer {
  
     /* must be initially hidden */
     display:none;
- 
+    position:relative;
+    height:250px;
  
     /* styling */
     background-color:#333;
@@ -157,7 +158,9 @@ ul#social li{
     -moz-box-shadow:0 0 90px 5px #000;
     -webkit-box-shadow: 0 0 90px #000;
 }
- 
+.work{
+  position:absolute;
+}
 .work img{
 	width:100%;
 }
