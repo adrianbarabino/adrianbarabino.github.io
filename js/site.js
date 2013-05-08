@@ -22,7 +22,7 @@ function open_work (info) {
 function close_work (argument) {
 	$(".work").slideUp(400, function () {
 	$("#workscontainer_inner").fadeOut(400, function () {
-		("#workscontainer").slideUp();
+		$("#workscontainer").slideUp();
 	})});
 	
 	work_is_open = false;
