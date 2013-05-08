@@ -6,7 +6,7 @@ function start () {
 	$("#jobs li a").attr("href", "javascript:void(0);");
 	$("[data-translate]").jqTranslate('index');
 	$("#jobs li a[rel]").overlay();
-	request = $.getJSON("http://adrianbarabino.com.ar/github/trabajos.json", function (data) {
+	request = $.getJSON("trabajos.json", function (data) {
 		works_json = data;
 		console.log(works_json);
 		$.each(works_json, function (i, val) {
