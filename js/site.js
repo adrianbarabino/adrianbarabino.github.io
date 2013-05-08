@@ -73,7 +73,7 @@ function start () {
 	if (storage.works) {
 		works_json = JSON.parse(storage.works);
 		$.each(works_json, function (i, val) {
-			$("#works").append('<li class="span3"><a href="http://'+val.url+'" title="'+val.nombre+' ('+val.fecha+')" rel="#'+val.tag+'"><img src="/images/works/thumb/'+val.tag+'.jpg" alt=""></a><span>'+val.nombre+' ('+val.fecha+')</span></li>')
+			$("#works").append('<li class="span2"><a href="http://'+val.url+'" title="'+val.nombre+' ('+val.fecha+')" rel="#'+val.tag+'"><img src="/images/works/thumb/'+val.tag+'.jpg" alt=""></a><span>'+val.nombre+' ('+val.fecha+')</span></li>')
 			$("#workscontainer_inner").append('<div class="work" style="display:none;" id="'+val.tag+'"><div class="close"></div>\n<figure>\n	<img src="/images/works/medium/'+val.tag+'.jpg" />\n</figure>\n<div class="details">\n  <h3>'+val.nombre+'</h3>\n  <h4>'+val.url+'</h4>\n  <span class="datew">'+val.fecha+'</span><br>\n  <span>Mi trabajo ahí:</span>\n  <ul>\n  </ul>\n</div>\n</div>');
 			$.each(val.trabajo, function (i, trabajo) {
 				$("div#"+val.tag+" div ul").append("<li>"+trabajo+"</li>");
@@ -91,7 +91,7 @@ function start () {
 			works_json = data;
 			console.log(works_json);
 			$.each(works_json, function (i, val) {
-				$("#works").append('<li class="span3"><a href="http://'+val.url+'" title="'+val.nombre+' ('+val.fecha+')" rel="#'+val.tag+'"><img src="/images/works/thumb/'+val.tag+'.jpg" alt=""></a><span>'+val.nombre+' ('+val.fecha+')</span></li>')
+				$("#works").append('<li class="span2"><a href="http://'+val.url+'" title="'+val.nombre+' ('+val.fecha+')" rel="#'+val.tag+'"><img src="/images/works/thumb/'+val.tag+'.jpg" alt=""></a><span>'+val.nombre+' ('+val.fecha+')</span></li>')
 				$("#workscontainer_inner").append('<div class="work" style="display:none;" id="'+val.tag+'"><div class="close"></div>\n<figure>\n	<img src="/images/works/medium/'+val.tag+'.jpg" />\n</figure>\n<div class="details">\n  <h3>'+val.nombre+'</h3>\n  <h4>'+val.url+'</h4>\n  <span class="datew">'+val.fecha+'</span><br>\n  <span>Mi trabajo ahí:</span>\n  <ul>\n  </ul>\n</div>\n</div>');
 				$.each(val.trabajo, function (i, trabajo) {
 					$("div#"+val.tag+" div ul").append("<li>"+trabajo+"</li>");
