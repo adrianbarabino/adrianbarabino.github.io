@@ -16,6 +16,29 @@ var works_json = "";
 var work_is_open;
 work_is_open = false;
 
+function after_ajax_call (info) {
+		$("#works a[rel]").mouseover(function(){
+								$("#works a[rel]").mousemove(function(e){
+									 $(this).next().css({left : e.pageX , top: e.pageY});
+								  });
+								eleOffset = $(this).offset();
+								$(this).next().fadeIn("fast").css({
+	 
+										left: eleOffset.left + $(this).outerWidth(),
+										top: eleOffset.top
+	 
+									});
+							}).mouseout(function(){
+								$(this).next().fadeOut("fast");
+							});
+		$("#works li a").on("click", open_work);
+			$(".work .close").on("click", close_work);
+
+			setTimeout(function () {
+
+				$("#works li a").attr("href", "javascript:void(0);");
+			}, 500);
+}
 	function go_to_bottom (info){
 		var anchor = $("#works")
 	    $('html, body').stop().animate({  
@@ -64,7 +87,6 @@ function start () {
 		works_json = JSON.parse(storage.works);
 		$.each(works_json, function (i, val) {
 			$("#works").append('<li><a href="http://'+val.url+'" title="'+val.nombre+' ('+val.fecha+')" rel="#'+val.tag+'"><img src="/images/works/thumb/'+val.tag+'.jpg" alt=""></a><span>'+val.nombre+' ('+val.fecha+')</span></li>')
-			$("#works a[rel=#"+val.tag+"]").tooltip(val.nombre);
 			$("#workscontainer_inner").append('<div class="work" style="display:none;" id="'+val.tag+'"><div class="close"></div>\n<figure>\n	<img src="/images/works/medium/'+val.tag+'.jpg" />\n</figure>\n<div class="details">\n  <h3>'+val.nombre+'</h3>\n  <h4>'+val.url+'</h4>\n  <span class="datew">'+val.fecha+'</span><br>\n  <span>Mi trabajo ahí:</span>\n  <ul>\n  </ul>\n</div>\n</div>');
 			$.each(val.trabajo, function (i, trabajo) {
 				$("div#"+val.tag+" div ul").append("<li>"+trabajo+"</li>");
@@ -72,13 +94,8 @@ function start () {
 			
 		})
 
-		$("#works li a").on("click", open_work);
-		$(".work .close").on("click", close_work);
-
-		setTimeout(function () {
-
-			$("#works li a").attr("href", "javascript:void(0);");
-		}, 500);
+		after_ajax_call();
+		
 		console.log("No hice llamada AJAX ya que tengo todo en mi LocalStorage!");
 	}else{
 		console.log("Voy a hacer una llamar AJAX porque mi localstorage esta vacio o no tengo!");
@@ -97,13 +114,8 @@ function start () {
 			if (storage) {
 				storage.setItem('works', JSON.stringify(works_json));
 			}
-			$("#works li a").on("click", open_work);
-			$(".work .close").on("click", close_work);
-
-			setTimeout(function () {
-
-				$("#works li a").attr("href", "javascript:void(0);");
-			}, 500);
+			after_ajax_call();
+			
 			
 		});
 	}
