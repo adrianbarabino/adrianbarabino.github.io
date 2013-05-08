@@ -181,7 +181,9 @@ ul#social li{
     padding: 1em 0.5em;
 }
 
-
+#works span{
+  display:none;
+}
 #works li{
   padding:0.5em;
   background: rgb(167, 29, 0);
