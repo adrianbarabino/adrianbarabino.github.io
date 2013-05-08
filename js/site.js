@@ -44,7 +44,7 @@ function after_ajax_call (info) {
 				});
 				
 		}else{
-			$("#workscontainer").css({"min-height": "270px"}, function () {
+			$("#workscontainer").css({"min-height": "270px"});
 				$("#workscontainer").slideDown(200, function () {
 					$("#workscontainer_inner").fadeIn(200, function () {
 						$($(actual_work).attr("rel")).slideDown(200);
@@ -53,7 +53,6 @@ function after_ajax_call (info) {
 						go_to_bottom();
 					});
 				});
-			});
 			
 			
 		}
