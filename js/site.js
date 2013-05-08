@@ -8,6 +8,9 @@ work_is_open = false;
 		if(work_is_open){
 				$("#workscontainer .active").slideUp(400, function () {
 					$($(actual_work).attr("rel")).slideDown();
+					$("#workscontainer .active").removeClass("active");
+					$($(actual_work).attr("rel")).addClass("active");
+
 				});
 				
 		}else{
@@ -26,6 +29,7 @@ function close_work (argument) {
 	$(".work").slideUp(400, function () {
 	$("#workscontainer_inner").fadeOut(400, function () {
 		$("#workscontainer").slideUp();
+		$("#workscontainer .active").removeClass("active");
 	})});
 	
 	work_is_open = false;
