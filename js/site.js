@@ -3,7 +3,6 @@ var works_json = "";
 
 function start () {
 	$(".lang").on("click", changeLang);
-	$("#jobs li a").attr("href", "javascript:void(0);");
 	$("[data-translate]").jqTranslate('index');
 	$("#jobs li a[rel]").overlay();
 	request = $.getJSON("trabajos.json", function (data) {
@@ -24,6 +23,7 @@ function start () {
 		buildNav     : true,   // if true, navigation links will be added
 		navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
 		});
+		$("#jobs li a").attr("href", "javascript:void(0);");
 	});
 	
 
