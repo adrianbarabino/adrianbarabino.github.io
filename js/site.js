@@ -17,7 +17,10 @@ var work_is_open;
 work_is_open = false;
 
 	function go_to_bottom (info){
-		$.scrollTo({top:'+=200px'})
+		var anchor = $("#works")
+	    $('html, body').stop().animate({  
+	        scrollTop: $(anchor).offset().top  
+	    }, 1000);  
 	}
 	function open_work (info) {
 		var actual_work = this;
