@@ -294,7 +294,21 @@ header h1{
 }
 header h2{
   display: inline-block;
-  font-size: 28px;
+  font-size: 24px;
+  margin-left: 0.2em;
+}
+header .title{
+  background: #333;
+  color: #eee;
+  padding-left: 0.8em;
+  margin-bottom:1em;
+}
+header p{
+  margin-top:0.3em;
+  font-size:16px;
+  letter-spacing: 0.08em;
+  margin-bottom:1em;
+
 }
 header picture{
   float: right;
