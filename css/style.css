@@ -143,6 +143,7 @@ ul#social li{
 #workscontainer{
     position:relative;
      min-height:260px;
+     display:none;
 
 }
 #workscontainer_inner {
