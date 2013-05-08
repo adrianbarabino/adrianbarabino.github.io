@@ -142,8 +142,9 @@ ul#social li{
 /* the overlayed element */
 #workscontainer{
     position:relative;
-     min-height:260px;
-     display:none;
+    min-height:270px;
+    display:none;
+    transition: all 1s ease-in-out;
 
 }
 #workscontainer_inner {
@@ -194,6 +195,7 @@ ul#social li{
     cursor:pointer;
     height:35px;
     width:35px;
+    z-index:100;
 }
 
 /* styling for elements inside overlay */
