@@ -74,6 +74,12 @@ ul#social li{
 }
 
 
+.mb-wrapper{
+  border-color: #333;
+}
+.mb-controls{
+  background: #333;
+}
 /* moving boxes */
 
 .demo-title {
@@ -203,7 +209,7 @@ ul#social li{
 /* styling for elements inside overlay */
   .details {
   position:absolute;
-  top:15px;
+  top:-5px;
   right:15px;
   font-size:11px;
   color:#fff;
