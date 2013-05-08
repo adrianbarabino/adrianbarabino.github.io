@@ -6,11 +6,15 @@ work_is_open = false;
 		var actual_work = this;
 		console.log(work_is_open);
 		if(work_is_open){
-				$($(actual_work).attr("rel")).slideDown();
+				$("#workscontainer .active").slideUp(400, function () {
+					$($(actual_work).attr("rel")).slideDown();
+				});
+				
 		}else{
 			$("#workscontainer").slideDown(400, function () {
 				$("#workscontainer_inner").fadeIn(400, function () {
 					$($(actual_work).attr("rel")).slideDown();
+					$($(actual_work).attr("rel")).addClass("active");
 				});
 			});
 			
