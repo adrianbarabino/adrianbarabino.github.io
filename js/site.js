@@ -9,7 +9,7 @@ function open_work (info) {
 			$($(actual_work).attr("rel")).slideDown();
 		});
 	}else{
-		$("#workscontainer").slideUp(400, function () {
+		$("#workscontainer").slideDown(400, function () {
 			$("#workscontainer_inner").fadeIn(400, function () {
 				$($(actual_work).attr("rel")).slideDown();
 			});
