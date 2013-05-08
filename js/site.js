@@ -2,23 +2,22 @@ var request = "";
 var works_json = "";
 var work_is_open;
 work_is_open = false;
-function open_work (info) {
-	var actual_work = this;
-	if(work_is_open){
-		$(".work").hide(10, function () {
-			$($(actual_work).attr("rel")).slideDown();
-		});
-	}else{
-		$("#workscontainer").slideDown(400, function () {
-			$("#workscontainer_inner").fadeIn(400, function () {
+	function open_work (info) {
+		var actual_work = this;
+		console.log(work_is_open);
+		if(work_is_open){
 				$($(actual_work).attr("rel")).slideDown();
+		}else{
+			$("#workscontainer").slideDown(400, function () {
+				$("#workscontainer_inner").fadeIn(400, function () {
+					$($(actual_work).attr("rel")).slideDown();
+				});
 			});
-		});
+			
+		}
 		
+		work_is_open = true;
 	}
-	
-	work_is_open = true;
-}
 function close_work (argument) {
 	$(".work").slideUp(400, function () {
 	$("#workscontainer_inner").fadeOut(400, function () {
