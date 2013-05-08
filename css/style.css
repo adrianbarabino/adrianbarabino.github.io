@@ -179,6 +179,7 @@ ul#social li{
     border-top-right-radius: 0!important;  
     margin-top: 0;
     padding: 1em 0.5em;
+    margin:0 !important;
 }
 
 #works span{
@@ -209,6 +210,7 @@ ul#social li{
 #works .tooltip{
   font-size:16px;
 }
+
 .work{
   position:absolute;
   width:100%;
