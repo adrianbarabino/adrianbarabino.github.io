@@ -145,22 +145,20 @@ ul#social li{
     /* must be initially hidden */
     display:none;
     position:relative;
-    height:250px;
  
     /* styling */
     background-color:#333;
  
     width:800px;
-    min-height:200px;
-    border:1px solid #666;
+    min-height:250px;
  
     /* CSS3 styling for latest browsers */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .movingBoxes{
-    border-top-left-radius: none!important;
-    border-top-right-radius: none!important;  
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;  
 }
 .work{
   position:absolute;
