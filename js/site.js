@@ -4,15 +4,19 @@ var work_is_open;
 work_is_open = false;
 function open_work (info) {
 	if(work_is_open){
-		$(".work").hide();
+		$(".work").hide(400, function () {
+			$($(this).attr("rel")).slideDown();
+		});
 	}else{
-		$("#workscontainer").slideDown();
+		$("#workscontainer").slideDown(400, function () {
+			$($(this).attr("rel")).slideDown();
+		});
 	}
-	$($(this).attr("rel")).slideDown();
+	
 	work_is_open = true;
 }
 function close_work (argument) {
-	$(".work").slideUp(function () {
+	$(".work").slideUp(400, function () {
 	$("#workscontainer").slideUp()});
 	
 	work_is_open = false;
