@@ -150,7 +150,7 @@ ul#social li{
     background-color:#333;
  
     width:800px;
-    min-height:250px;
+    min-height:260px;
     border:5px solid #333;
  
     /* CSS3 styling for latest browsers */
@@ -198,6 +198,19 @@ ul#social li{
  
   .details h3 {
   color:#aba;
-  font-size:15px;
+  font-size:30px;
+  margin:0;
+  }
+  .details h4{
+    font-size:18px;
+    margin:0;
+    margin-bottom:10px;
+
+  }
+  .details span{
+    font-size:16px;
+  }
+  .defails li{
+    font-size:16px;
   }
   
