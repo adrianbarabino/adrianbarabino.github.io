@@ -17,7 +17,7 @@ var work_is_open;
 work_is_open = false;
 
 function after_ajax_call (info) {
-		$("#works li a").tooltip();
+		$("#works li a").tooltip({placement: "right"});
 		$("#works li a").on("click", open_work);
 			$(".work .close").on("click", close_work);
 
