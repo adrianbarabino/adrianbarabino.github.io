@@ -3,13 +3,14 @@ var works_json = "";
 var work_is_open;
 work_is_open = false;
 function open_work (info) {
+	var actual_work = this;
 	if(work_is_open){
 		$(".work").hide(400, function () {
-			$($(this).attr("rel")).slideDown();
+			$($(actual_work).attr("rel")).slideDown();
 		});
 	}else{
 		$("#workscontainer").slideDown(400, function () {
-			$($(this).attr("rel")).slideDown();
+			$($(actual_work).attr("rel")).slideDown();
 		});
 	}
 	
