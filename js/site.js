@@ -76,7 +76,9 @@ function start () {
 
 			$("#works li a").attr("href", "javascript:void(0);");
 		}, 500);
+		console.log("No hice llamada AJAX ya que tengo todo en mi LocalStorage!");
 	}else{
+		console.log("Voy a hacer una llamar AJAX porque mi localstorage esta vacio o no tengo!");
 		
 		request = $.getJSON("trabajos.json", function (data) {
 			works_json = data;
