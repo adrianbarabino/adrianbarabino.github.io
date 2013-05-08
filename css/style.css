@@ -206,6 +206,9 @@ ul#social li{
   color:white;
   display:block;
 }
+#works .tooltip{
+  font-size:16px;
+}
 .work{
   position:absolute;
   width:100%;
