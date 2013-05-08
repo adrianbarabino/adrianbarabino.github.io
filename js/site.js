@@ -1,6 +1,9 @@
 var request = "";
 var works_json = "";
 
+function open_work (info) {
+	$("#workscontainer").slideDown();
+}
 function start () {
 	$(".lang").on("click", changeLang);
 	$("[data-translate]").jqTranslate('index');
@@ -15,6 +18,7 @@ function start () {
 			})
 			
 		})
+		$("#works li a").on("click", open_work);
 		$('#works').movingBoxes({
 		startPanel   : 1,      // start with this panel
 		reducedSize  : 0.8,    // non-current panel size: 80% of panel size
