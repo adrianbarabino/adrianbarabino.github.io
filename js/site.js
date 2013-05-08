@@ -9,7 +9,7 @@ function open_work (info) {
 			$($(actual_work).attr("rel")).slideDown();
 		});
 	}else{
-		$("#workscontainer_inner").slideDown(400, function () {
+		$("#workscontainer_inner").fade(400, function () {
 			$($(actual_work).attr("rel")).slideDown();
 		});
 	}
@@ -17,7 +17,7 @@ function open_work (info) {
 	work_is_open = true;
 }
 function close_work (argument) {
-	$(".work").slideUp(400, function () {
+	$(".work").fade(400, function () {
 	$("#workscontainer_inner").slideUp()});
 	
 	work_is_open = false;
