@@ -155,12 +155,12 @@ ul#social li{
     border:1px solid #666;
  
     /* CSS3 styling for latest browsers */
-    border-radius-top-left: 10px;
-    border-radius-top-right: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .movingBoxes{
-    border-radius-top-left: none!important;
-    border-radius-top-right: none!important;  
+    border-top-left-radius: none!important;
+    border-top-right-radius: none!important;  
 }
 .work{
   position:absolute;
