@@ -176,6 +176,18 @@ ul#social li{
     border-top-left-radius: 0!important;
     border-top-right-radius: 0!important;  
 }
+
+.mb-scroll{
+  background: #333;
+}
+.mb-inside{
+  background: rgb(209, 29, 0);
+  border: 1px solid rgb(83, 0, 0);
+}
+.mb-inside a{
+  border:none;
+  color:white;
+}
 .work{
   position:absolute;
   width:100%;
@@ -195,6 +207,7 @@ ul#social li{
 .work .details{
 	width:37%;
 }
+
 /* close button positioned on upper right corner */
 .work .close {
     background-image:url(/images/overlay/close.png);
