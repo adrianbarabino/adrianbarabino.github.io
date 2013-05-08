@@ -140,13 +140,11 @@ ul#social li{
 /* overlay */
 
 /* the overlayed element */
-.simple_overlay {
+.works {
  
     /* must be initially hidden */
     display:none;
  
-    /* place overlay on top of other elements */
-    z-index:10000;
  
     /* styling */
     background-color:#333;
@@ -160,18 +158,18 @@ ul#social li{
     -webkit-box-shadow: 0 0 90px #000;
 }
  
-.simple_overlay img{
+.work img{
 	width:100%;
 }
-.simple_overlay figure{
+.work figure{
 	width:70%;
 	margin:0;
 }
-.simple_overlay .details{
+.work .details{
 	width:25%;
 }
 /* close button positioned on upper right corner */
-.simple_overlay .close {
+.work .close {
     background-image:url(/images/overlay/close.png);
     position:absolute;
     right:-15px;
