@@ -171,20 +171,21 @@ ul#social li{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.movingBoxes{
+#works{
+    width:100%;
+    background: #333;
     border-radius: 5px;
     border-top-left-radius: 0!important;
     border-top-right-radius: 0!important;  
 }
 
-.mb-scroll{
-  background: #333;
-}
-.mb-inside{
+
+#works li{
+  padding: 0.3em;
   background: rgb(167, 29, 0);
   border: 1px solid rgb(83, 0, 0);
 }
-.mb-inside a{
+#works li a{
   border:none;
   color:white;
 }

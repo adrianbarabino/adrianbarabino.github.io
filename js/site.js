@@ -73,13 +73,7 @@ function start () {
 
 		$("#works li a").on("click", open_work);
 		$(".work .close").on("click", close_work);
-		$('#works').movingBoxes({
-		startPanel   : 1,      // start with this panel
-		reducedSize  : 0.8,    // non-current panel size: 80% of panel size
-		wrap         : true,   // if true, the panel will "wrap" (it really rewinds/fast forwards) at the ends
-		buildNav     : true,   // if true, navigation links will be added
-		navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
-		});
+
 		setTimeout(function () {
 
 			$("#works li a").attr("href", "javascript:void(0);");
@@ -104,13 +98,7 @@ function start () {
 			}
 			$("#works li a").on("click", open_work);
 			$(".work .close").on("click", close_work);
-			$('#works').movingBoxes({
-			startPanel   : 1,      // start with this panel
-			reducedSize  : 0.8,    // non-current panel size: 80% of panel size
-			wrap         : true,   // if true, the panel will "wrap" (it really rewinds/fast forwards) at the ends
-			buildNav     : true,   // if true, navigation links will be added
-			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
-			});
+
 			setTimeout(function () {
 
 				$("#works li a").attr("href", "javascript:void(0);");
