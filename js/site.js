@@ -17,13 +17,13 @@ function start () {
 			})
 			
 		})
-	});
-	$('#jobs').movingBoxes({
-	startPanel   : 1,      // start with this panel
-	reducedSize  : 0.8,    // non-current panel size: 80% of panel size
-	wrap         : true,   // if true, the panel will "wrap" (it really rewinds/fast forwards) at the ends
-	buildNav     : true,   // if true, navigation links will be added
-	navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		$('#jobs').movingBoxes({
+		startPanel   : 1,      // start with this panel
+		reducedSize  : 0.8,    // non-current panel size: 80% of panel size
+		wrap         : true,   // if true, the panel will "wrap" (it really rewinds/fast forwards) at the ends
+		buildNav     : true,   // if true, navigation links will be added
+		navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
 	});
 	
 
