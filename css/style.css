@@ -155,7 +155,7 @@ ul#social li a{
 #workscontainer{
     position:relative;
     display:none;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 #workscontainer_inner {

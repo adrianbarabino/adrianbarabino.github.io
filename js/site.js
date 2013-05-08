@@ -36,17 +36,17 @@ function after_ajax_call (info) {
 		var actual_work = this;
 		console.log(work_is_open);
 		if(work_is_open){
-				$("#workscontainer .active").slideUp(400, function () {
-					$($(actual_work).attr("rel")).slideDown();
+				$("#workscontainer .active").slideUp(200, function () {
+					$($(actual_work).attr("rel")).slideDown(200);
 					$("#workscontainer .active").removeClass("active");
 					$($(actual_work).attr("rel")).addClass("active");
 
 				});
 				
 		}else{
-			$("#workscontainer").slideDown(400, function () {
-				$("#workscontainer_inner").fadeIn(400, function () {
-					$($(actual_work).attr("rel")).slideDown();
+			$("#workscontainer").slideDown(200, function () {
+				$("#workscontainer_inner").fadeIn(200, function () {
+					$($(actual_work).attr("rel")).slideDown(200);
 					$("#workscontainer").css({"min-height": "270px"});
 					$($(actual_work).attr("rel")).addClass("active");
 					go_to_bottom();
@@ -58,9 +58,9 @@ function after_ajax_call (info) {
 		work_is_open = true;
 	}
 function close_work (argument) {
-	$(".work").slideUp(400, function () {
-	$("#workscontainer_inner").fadeOut(400, function () {
-		$("#workscontainer").slideUp();
+	$(".work").slideUp(200, function () {
+	$("#workscontainer_inner").fadeOut(200, function () {
+		$("#workscontainer").slideUp(200);
 		$("#workscontainer").css({"min-height": "0"});
 		$("#workscontainer .active").removeClass("active");
 	})});
