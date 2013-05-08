@@ -204,6 +204,7 @@ ul#social li{
 #works li a{
   border:none;
   color:white;
+  display:block;
 }
 .work{
   position:absolute;
