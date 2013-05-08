@@ -181,9 +181,16 @@ ul#social li{
 
 
 #works li{
-  padding: 0.3em;
+  padding:0.5em;
   background: rgb(167, 29, 0);
   border: 1px solid rgb(83, 0, 0);
+  display: inline-block;
+  width: 20%;
+  margin: 0 0.5em;
+}
+
+#works img{
+  width: 100%;
 }
 #works li a{
   border:none;
