@@ -140,17 +140,20 @@ ul#social li{
 /* overlay */
 
 /* the overlayed element */
-#workscontainer {
+#workscontainer{
+    position:relative;
+     min-height:260px;
+
+}
+#workscontainer_inner {
  
     /* must be initially hidden */
     display:none;
-    position:relative;
+    position:absolute;
  
     /* styling */
     background-color:#333;
- 
-    width:800px;
-    min-height:260px;
+     min-height:260px;
     border:5px solid #333;
     bottom:0;
     left:0;
