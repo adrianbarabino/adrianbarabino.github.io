@@ -12,8 +12,9 @@ function open_work (info) {
 	work_is_open = true;
 }
 function close_work (argument) {
-	$(".work").slideUp();
-	$("#workscontainer").slideUp();
+	$(".work").slideUp(function () {
+	$("#workscontainer").slideUp()});
+	
 	work_is_open = false;
 }
 function start () {
