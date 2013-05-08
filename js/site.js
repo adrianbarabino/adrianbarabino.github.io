@@ -17,6 +17,7 @@ work_is_open = false;
 			$("#workscontainer").slideDown(400, function () {
 				$("#workscontainer_inner").fadeIn(400, function () {
 					$($(actual_work).attr("rel")).slideDown();
+					$("#workscontainer").css({"min-height": "260px"});
 					$($(actual_work).attr("rel")).addClass("active");
 				});
 			});
@@ -29,6 +30,7 @@ function close_work (argument) {
 	$(".work").slideUp(400, function () {
 	$("#workscontainer_inner").fadeOut(400, function () {
 		$("#workscontainer").slideUp();
+		$("#workscontainer").css({"min-height": "0"});
 		$("#workscontainer .active").removeClass("active");
 	})});
 	
