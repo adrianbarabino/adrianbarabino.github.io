@@ -1,0 +1,92 @@
+[
+	{
+		"nombre": "Bienvenidos Al Mundo",
+		"fecha": "2010",
+		"tag": "bam",
+		"url": "www.bienvenidosalmundo.net",
+		"trabajo": [
+			"Diseño de sitio web"
+			]
+
+
+	},
+	{
+		"nombre": "Encuentro Ciudadano",
+		"fecha": "2011",
+		"tag": "ec2011",
+		"url": "www.encuentrociudadano.org",
+		"trabajo": [
+			"Diseño de sitio web",
+			"Micrositios para candidatos",
+			"Diseño para Wordpress"
+			]
+
+
+	},
+	{
+		"nombre": "FM Abril",
+		"fecha": "2012",
+		"tag": "fmabril",
+		"url": "www.fmabril.net",
+		"trabajo": [
+			"Diseño de sitio web"
+			]
+
+
+	},
+	{
+		"nombre": "Laboratorio Fotográfico Elio Zóccola",
+		"fecha": "2013",
+		"tag": "labofoto",
+		"url": "www.eliozoccola.com.ar",
+		"trabajo": [
+			"Diseño de sitio web",
+			"Diseño Adaptativo (Responsive Design)"
+			]
+
+	},
+	{
+		"nombre": "Horacio Córdoba",
+		"fecha": "2013",
+		"tag": "hc2013",
+		"url": "www.horaciocordoba.com",
+		"trabajo": [
+			"Diseño de sitio web",
+			"Diseño Adaptativo (Responsive Design)"
+			]
+
+	},
+	{
+		"nombre": "Brote Colectivo",
+		"fecha": "2012",
+		"tag": "brote",
+		"url": "www.brotecolectivo.com",
+		"trabajo": [
+			"Proyecto personal"
+			]
+	},
+	{
+		"nombre": "Judas and the Winehearts",
+		"fecha": "2012",
+		"tag": "judas",
+		"url": "www.judasandthewinehearts.com",
+		"trabajo": [
+			"Sistemas de descargas con claves aleatorias",
+			"Diseño de presskit online"
+			]
+
+
+	},
+	{
+		"nombre": "Buggame",
+		"fecha": "2012",
+		"tag": "buggame",
+		"url": "www.buggame.cl",
+		"trabajo": [
+			"Modificaciones de diseño",
+			"Administración de servidores"
+			]
+
+
+	}
+]
