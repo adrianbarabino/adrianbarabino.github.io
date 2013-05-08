@@ -44,14 +44,17 @@ function after_ajax_call (info) {
 				});
 				
 		}else{
-			$("#workscontainer").slideDown(200, function () {
-				$("#workscontainer_inner").fadeIn(200, function () {
-					$($(actual_work).attr("rel")).slideDown(200);
-					$("#workscontainer").css({"min-height": "270px"});
-					$($(actual_work).attr("rel")).addClass("active");
-					go_to_bottom();
+			$("#workscontainer").css({"min-height": "270px"}, function () {
+				$("#workscontainer").slideDown(200, function () {
+					$("#workscontainer_inner").fadeIn(200, function () {
+						$($(actual_work).attr("rel")).slideDown(200);
+						
+						$($(actual_work).attr("rel")).addClass("active");
+						go_to_bottom();
+					});
 				});
 			});
+			
 			
 		}
 		
