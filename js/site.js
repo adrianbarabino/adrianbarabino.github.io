@@ -29,7 +29,6 @@ function start () {
 		setTimeout(function () {
 
 			$("#works li a").attr("href", "javascript:void(0);");
-			$("#works li a[rel]").overlay();
 		}, 500);
 		
 	});
