@@ -66,13 +66,19 @@ ul#jobs li img{
 
 ul#social{
 	list-style:none;
+  margin:0 !important;
 }
 
 ul#social li{
-	display:inline-block;
-	width:10%;
+  display: inline-block;
+  background: #333;
+  padding: 0.3em 0.2em;
+  text-align: center;
 }
 
+ul#social li a{
+  color:white;
+}
 
 .mb-wrapper{
   border-color: #333;
