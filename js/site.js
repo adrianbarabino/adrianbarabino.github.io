@@ -95,7 +95,7 @@ function start () {
 			console.log(works_json);
 			$.each(works_json, function (i, val) {
 				$("#works").append('<li class="span2"><a href="http://'+val.url+'" title="'+val.nombre+' ('+val.fecha+')" rel="#'+val.tag+'"><img src="/images/works/thumb/'+val.tag+'.jpg" alt=""></a><span>'+val.nombre+' ('+val.fecha+')</span></li>')
-				$("#workscontainer_inner").append('<div class="work" style="display:none;" id="'+val.tag+'"><div class="close"></div>\n<figure>\n	<img src="/images/works/medium/'+val.tag+'.jpg" />\n</figure>\n<div class="details">\n  <h3>'+val.nombre+'</h3>\n  <h4>'+val.url+'</h4>\n  <span class="date">'+val.fecha+'</span><br>\n  <span>Mi trabajo ahí:</span>\n  <ul>\n  </ul>\n</div>\n</div>');
+				$("#workscontainer_inner").append('<div class="work" style="display:none;" id="'+val.tag+'"><div class="close"></div>\n<figure>\n	<img src="/images/works/medium/'+val.tag+'.jpg" />\n</figure>\n<div class="details">\n  <h3>'+val.nombre+'</h3>\n  <h4>'+val.url+'</h4>\n  <span class="date">'+val.fecha+'</span><br>\n <span data-translate="my-work-there">My work there:</span>\n  <ul>\n  </ul>\n</div>\n</div>');
 				$.each(val.trabajo, function (i, trabajo) {
 					$("div#"+val.tag+" div ul").append("<li>"+trabajo+"</li>");
 				})
