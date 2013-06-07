@@ -25,6 +25,7 @@ function after_ajax_call (info) {
 
 				$("#works li a").attr("href", "javascript:void(0);");
 			}, 500);
+			$("[data-translate]").jqTranslate('index',{defaultLang: 'en'});
 }
 	function go_to_bottom (info){
 		var anchor = $("#works")
@@ -72,7 +73,7 @@ function close_work (argument) {
 }
 function start () {
 	$(".lang").on("click", changeLang);
-	$("[data-translate]").jqTranslate('index',{defaultLang: 'en'});
+	
 	if (storage.works) {
 		works_json = JSON.parse(storage.works);
 		$.each(works_json, function (i, val) {
