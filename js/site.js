@@ -86,7 +86,7 @@ function load_photos (argument) {
 	var photos_request = $.ajax({
 		datatype: "json",
 		url: "https://api.500px.com/v1/photos",
-		data: {username: "adrianbarabino", sort:"created_at", feature: "user", rpp:100, image_size:5, include_states:"voted", consumer_key:"agmBNq9meDj0uStFYVboswqtKdrBu4slzLBovdw3"}
+		data: {username: "adrianbarabino", sort:"created_at", feature: "user", rpp:100, image_size:3, include_states:"voted", consumer_key:"agmBNq9meDj0uStFYVboswqtKdrBu4slzLBovdw3"}
 
 	});
 
