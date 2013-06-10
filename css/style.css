@@ -327,3 +327,25 @@ header picture{
 header picture img{
   width:100%;
 }
+
+#photos{
+  padding: 0;
+  margin: 0;
+}
+
+#photos li{
+  display: inline-block;
+  width: 20%;
+  margin: 1em;
+  padding: 0.4em;
+  text-align:center;
+}
+
+#photos li img{
+  width:100%;
+}
+
+#photos li span{
+  color:white;
+  margin-top:0.2em;
+}

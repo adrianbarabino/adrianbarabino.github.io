@@ -71,25 +71,40 @@ function close_work (argument) {
 	
 	work_is_open = false;
 }
+function random_array ( myArray ) {
+  var i = myArray.length, j, temp;
+  if ( i === 0 ) return false;
+  while ( --i ) {
+     j = Math.floor( Math.random() * ( i + 1 ) );
+     temp = myArray[i];
+     myArray[i] = myArray[j]; 
+     myArray[j] = temp;
+   }
+}
 
 function load_photos (argument) {
 	var photos_request = $.ajax({
 		datatype: "json",
 		url: "https://api.500px.com/v1/photos",
-		data: {username: "adrianbarabino", sort:"created_at", feature: "user", image_size:3, include_states:"voted", consumer_key:"agmBNq9meDj0uStFYVboswqtKdrBu4slzLBovdw3"}
+		data: {username: "adrianbarabino", sort:"created_at", feature: "user", rpp:100, image_size:5, include_states:"voted", consumer_key:"agmBNq9meDj0uStFYVboswqtKdrBu4slzLBovdw3"}
 
 	});
 
 	photos_request.done(function (data) {
-		console.log(data.photos);
-		$.each(data.photos, function (i, val) {
-			$("#photos").append('<li><a href="http://500px.com/photo/'+val.id+'"><img src="'+val.image_url+'"><span>'+val.name+'</span></a>')
+		photos = data.photos;
+		random_array(photos)
+		console.log(photos);
+		$.each(photos, function (i, val) {
+			if(i<12){
+				$("#photos").append('<li><a href="http://500px.com/photo/'+val.id+'"><img src="'+val.image_url+'"><span>'+val.name+'</span></a>')
+			}
 		})
 	})
 }
 
 function start () {
 	$(".lang").on("click", changeLang);
+	load_photos();
 	
 	if (storage.works) {
 		works_json = JSON.parse(storage.works);
