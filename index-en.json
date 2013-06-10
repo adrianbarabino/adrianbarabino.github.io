@@ -19,6 +19,8 @@
   "subject": "Subject",
   "name": "Name",
   "email": "Mail",
-  "contact": "Contact"
+  "contact": "Contact",
+  "message": "Insert your message...",
+  "send": "Send"
 
 }

@@ -19,7 +19,9 @@
   "subject": "Asunto",
   "name": "Nombre",
   "email": "Mail",
-  "contact": "Contacto"
+  "contact": "Contacto",
+  "message": "Ingresá tu mensaje...",
+  "send": "Enviar"
 
 
  }
