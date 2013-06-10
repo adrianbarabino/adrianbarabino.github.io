@@ -95,7 +95,7 @@ function load_photos (argument) {
 		random_array(photos)
 		console.log(photos);
 		$.each(photos, function (i, val) {
-			if(i<12){
+			if(i<8){
 				$("#photos").append('<li><a href="http://500px.com/photo/'+val.id+'"><img src="'+val.image_url+'"><span>'+val.name+'</span></a>')
 			}
 		})

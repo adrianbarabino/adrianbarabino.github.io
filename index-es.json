@@ -15,7 +15,11 @@
   "download-by-random-keys": "Sistema de descargas con claves aleatorias",
   "presskit-design": "Diseño de presskit online",
   "modifications-design": "Retoques de diseño",
-  "server-admin": "Administración de servidores"
+  "server-admin": "Administración de servidores",
+  "subject": "Asunto",
+  "name": "Nombre",
+  "email": "Mail",
+  "contact": "Contacto"
 
 
  }
