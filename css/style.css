@@ -339,6 +339,7 @@ header picture img{
   margin: 1em;
   padding: 0.4em;
   text-align:center;
+  background: #333;
 }
 
 #photos li img{
