@@ -71,6 +71,23 @@ function close_work (argument) {
 	
 	work_is_open = false;
 }
+
+function load_photos (argument) {
+	var photos_request = $.ajax({
+		datatype: "json",
+		url: "https://api.500px.com/v1/photos",
+		data: {username: "adrianbarabino", sort:"created_at", feature: "user", image_size:3, include_states:"voted", consumer_key:"agmBNq9meDj0uStFYVboswqtKdrBu4slzLBovdw3"}
+
+	});
+
+	photos_request.done(function (data) {
+		console.log(data.photos);
+		$.each(data.photos, function (i, val) {
+			$("#photos").append('<li><a href="http://500px.com/photo/'+val.id+'"><img src="'+val.image_url+'"><span>'+val.name+'</span></a>')
+		})
+	})
+}
+
 function start () {
 	$(".lang").on("click", changeLang);
 	
