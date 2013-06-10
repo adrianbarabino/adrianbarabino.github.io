@@ -350,3 +350,17 @@ header picture img{
   color:white;
   margin-top:0.2em;
 }
+
+#langselect{
+  background: #888;
+  border-bottom: 2px solid #bbb;
+  height: 25px;
+  margin-bottom: 0.8em;
+  color: white;
+}
+#langselect li a{
+  color: rgb(255, 255, 255);
+  border-radius: 0.2em;
+  padding: 0.2em 1em;
+  line-height: 25px;
+}
