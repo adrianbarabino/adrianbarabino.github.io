@@ -19,7 +19,7 @@ work_is_open = false;
 function after_ajax_call (info) {
 		$("#works li a").tooltip({placement: "bottom"});
 		$("h4").on("click", function (info){
-			window.location.href = info.currentTarget.innerText; 
+			window.location.href = "http://"+info.currentTarget.innerText; 
 		});
 		$("#works li a").on("click", open_work);
 			$(".work .close").on("click", close_work);
