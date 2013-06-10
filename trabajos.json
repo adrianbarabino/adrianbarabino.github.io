@@ -5,7 +5,7 @@
 		"tag": "bam",
 		"url": "www.bienvenidosalmundo.net",
 		"trabajo": [
-			"Diseño de sitio web"
+			"<span data-translate='web-design'>Web Design</span>"
 			]
 
 
@@ -16,9 +16,9 @@
 		"tag": "ec2011",
 		"url": "www.encuentrociudadano.org",
 		"trabajo": [
-			"Diseño de sitio web",
-			"Micrositios para candidatos",
-			"Diseño para Wordpress"
+			"<span data-translate='web-design'>Web Design</span>",
+			"<span data-translate='micro-sites-candidates'>Microsites for Candidates</span>",
+			"<span data-translate='wordpress-design'>Wordpress Design</span>"
 			]
 
 
@@ -29,7 +29,7 @@
 		"tag": "fmabril",
 		"url": "www.fmabril.net",
 		"trabajo": [
-			"Diseño de sitio web"
+			"<span data-translate='web-design'>Web Design</span>"
 			]
 
 
@@ -40,8 +40,8 @@
 		"tag": "labofoto",
 		"url": "www.eliozoccola.com.ar",
 		"trabajo": [
-			"Diseño de sitio web",
-			"Diseño Adaptativo (Responsive Design)"
+			"<span data-translate='web-design'>Web Design</span>",
+			"<span data-translate='responsive-design'>Responsive Design</span>"
 			]
 
 	},
@@ -51,8 +51,8 @@
 		"tag": "hc2013",
 		"url": "www.horaciocordoba.com",
 		"trabajo": [
-			"Diseño de sitio web",
-			"Diseño Adaptativo (Responsive Design)"
+			"<span data-translate='web-design'>Web Design</span>",
+			"<span data-translate-'responsive-design'>Responsive Design</span>"
 			]
 
 	},
@@ -62,7 +62,7 @@
 		"tag": "brote",
 		"url": "www.brotecolectivo.com",
 		"trabajo": [
-			"Proyecto personal"
+			"<span data-translate='personal-project'>Personal Project</span>"
 			]
 	},
 	{
@@ -71,8 +71,8 @@
 		"tag": "judas",
 		"url": "www.judasandthewinehearts.com",
 		"trabajo": [
-			"Sistemas de descargas con claves aleatorias",
-			"Diseño de presskit online"
+			"<span data-translate='download-by-random-keys'>Download System by Random Keys</span>",
+			"<span data-translate='presskit-design'>Design of Online Presskit</span>"
 			]
 
 
@@ -83,8 +83,8 @@
 		"tag": "buggame",
 		"url": "www.buggame.cl",
 		"trabajo": [
-			"Modificaciones de diseño",
-			"Administración de servidores"
+			"<span data-translate='modifications-design'>Design changes</span>",
+			"<span data-translate='server-admin'>Administration of Servers</span>"
 			]
 
 
