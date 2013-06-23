@@ -364,3 +364,12 @@ header picture img{
   padding: 0.2em 1em;
   line-height: 25px;
 }
+
+/* Responsive Design */
+
+@media screen and (min-width:400px){
+  #message{
+    width:78%;
+  }
+
+}
