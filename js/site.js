@@ -105,6 +105,33 @@ function load_photos (argument) {
 	})
 }
 
+function load_contact (){
+
+	$('form').validate({
+	messages: {
+	     nombre: "Insert your name",
+	     email: {
+	       required: "We need your mail for contact you",
+	       email: "Your email address need to be valid, example: name@hotmail.com"
+	     }
+	   },
+	   submitHandler: function(form){
+	   	$('form').slideUp();
+		$("#thanks").slideDown();
+	   	$.post("http://www.adrianbarabino.com.ar/enviarMail.php", $("form").serialize(), function(data){
+	   		console.log(data);
+	   	});
+	   },
+	    onfocusout: function(e) {
+	      this.element(e);
+	    }
+	    , onkeyup: false
+	  });
+	$('form #send').on("click", function () {
+		$('form').submit();
+
+	})
+}
 function start () {
 	$(".lang").on("click", changeLang);
 	load_photos();
