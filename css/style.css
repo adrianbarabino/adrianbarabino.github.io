@@ -3,7 +3,7 @@
 @import 'movingboxes-ie.css';
 
 body{
-	background:#222;
+	background:#222 url(../images/pattern.png);
 	margin:0;
   font-family: "Bitter", helvetica, arial;
 }
@@ -70,7 +70,7 @@ ul#social{
 
 ul#social li{
   display: inline-block;
-  background: #333;
+  background: #222 url(../images/pattern.png);
   padding: 0.3em 0.2em;
   text-align: center;
 }
@@ -83,7 +83,7 @@ ul#social li a{
   border-color: #333;
 }
 .mb-controls{
-  background: #333;
+  background: #222 url(../images/pattern.png);
 }
 /* moving boxes */
 
@@ -165,9 +165,10 @@ ul#social li a{
     position:absolute;
  
     /* styling */
-    background-color:#333;
+    background:#222 url(../images/pattern.png);;
     min-height:270px;
-    border:5px solid #333;
+    border:0px solid #333;
+    padding:4.5px!important;
     bottom:0;
     left:0;
     width:99%;
@@ -178,7 +179,7 @@ ul#social li a{
 }
 #works{
 
-    background: #333;
+    background: #222 url(../images/pattern.png);
     border-radius: 5px;
     border-top-left-radius: 0!important;
     border-top-right-radius: 0!important;  
@@ -238,7 +239,7 @@ ul#social li a{
 
 /* close button positioned on upper right corner */
 .work .close {
-    background-image:url(/images/overlay/close.png);
+    background-image:url(../images/overlay/close.png);
     position:absolute;
     right:-15px;
     top:-25px;
@@ -303,7 +304,7 @@ header h2{
   margin-left: 0.2em;
 }
 header .title{
-  background: #333;
+  background: #222 url(../images/pattern.png);
   color: #eee;
   padding-left: 0.8em;
   margin-bottom:1em;
@@ -318,7 +319,8 @@ header p{
 header picture{
   float: right;
   margin: 1em;
-  background: #333;
+  background: #222 url(../images/pattern.png);
+  background-position: 428px 151px;
   padding: 1em;
   width: 25%;
   margin-top: -1em;
@@ -339,7 +341,7 @@ header picture img{
   margin: 1em;
   padding: 0.4em;
   text-align:center;
-  background: #333;
+  background: #222 url(../images/pattern.png);
 }
 
 #photos li img{
@@ -381,25 +383,28 @@ form label.error{
 
 input.error, textarea.error{
   border-color:red;
-  background: #fff url("./images/validate.png");
+  background: #fff url("../images/validate.png");
   background-position-x: right;
   background-repeat: no-repeat;
-  background-position-y: -2.1em;
-  background-size:40px;
+  background-position-y: -2em;
+  background-size:35px;
 
 }
 
 input.valid, textarea.valid{
   border-color:green;
-  background: #fff url("/images/validate.png");
+  background: #fff url("../images/validate.png");
   background-position-x: right;
   background-repeat: no-repeat;
   background-position-y: 0em;
-  background-size:40px;
+  background-size:35px;
 }
 
 
-
+textarea{
+  height: 120px;
+  resize:none 
+}
 textarea.valid{
   background-position-y: 6em;
 }
