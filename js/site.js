@@ -135,6 +135,7 @@ function load_contact (){
 function start () {
 	$(".lang").on("click", changeLang);
 	load_photos();
+	load_contact();
 	
 	if (storage.works) {
 		works_json = JSON.parse(storage.works);
