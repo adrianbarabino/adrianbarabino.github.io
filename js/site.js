@@ -118,7 +118,7 @@ function load_contact (){
 	   submitHandler: function(form){
 	   	$('form').slideUp();
 		$("#thanks").slideDown();
-	   	$.post("http://www.adrianbarabino.com.ar/enviarMail.php", $("form").serialize(), function(data){
+	   	$.post("http://www.adrianbarabino.net/enviarMail.php", $("form").serialize(), function(data){
 	   		console.log(data);
 	   	});
 	   },
