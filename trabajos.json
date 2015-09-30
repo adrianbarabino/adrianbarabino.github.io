@@ -88,5 +88,56 @@
 			]
 
 
+	},
+	{
+		"nombre": "Rifas Barragan",
+		"fecha": "2014",
+		"tag": "rifas",
+		"url": "www.rifasbarragan.com",
+		"trabajo": [
+			"<span data-translate='web-design'>Web Design</span>",
+			"<span data-translate-'responsive-design'>Responsive Design</span>",
+			"<span data-translate-'branding'>Branding</span>",
+			"<span data-translate-'social-media-marketing'>Social Media Marketing</span>"
+			]
+
+
+	},
+	{
+		"nombre": "Rotary Rio Gallegos",
+		"fecha": "2013",
+		"tag": "rotary",
+		"url": "www.rotaryriogallegos.com",
+		"trabajo": [
+			"<span data-translate='web-design'>Web Design</span>",
+			"<span data-translate-'responsive-design'>Responsive Design</span>"
+			]
+
+
+	},
+	{
+		"nombre": "Pasa en Santa Cruz",
+		"fecha": "2015",
+		"tag": "pasa",
+		"url": "www.pasaensantacruz.com",
+		"trabajo": [
+			"<span data-translate='web-design'>Web Design</span>",
+			"<span data-translate-'responsive-design'>Responsive Design</span>",
+			"<span data-translate='branding'>Branding</span>"
+			]
+
+
+	},
+	{
+		"nombre": "ByA Patagonia",
+		"fecha": "2015",
+		"tag": "bya",
+		"url": "www.byapatagonia.com",
+		"trabajo": [
+			"<span data-translate='web-design'>Web Design</span>",
+			"<span data-translate-'responsive-design'>Responsive Design</span>"
+			]
+
+
 	}
 ]
